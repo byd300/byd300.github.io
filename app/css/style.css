@@ -1,0 +1,17 @@
+.offers {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px 20px 0px; }
+  .offers--dark {
+    background-color: #113c67; }
+
+.button {
+  border: solid 1px #fff;
+  background-color: #113c67; }
+  .button--smal {
+    padding: 10px 30px; }
+
+nav ul {
+  list-style-type: none; }
+  nav ul li {
+    float: left; }
