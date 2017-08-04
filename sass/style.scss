@@ -347,9 +347,46 @@ li {
 	padding-bottom:40px;
 }
 
-.zlw-simple {
-	background-color: #0199c0;
+.certyfikaty {
+	text-align: center;
+	background-color: #b1b1b1;
+	color: white;
+	h5 {
+		margin-bottom: 5px;
+	}
+	i {
+		margin-top:-10px;
+	}
+
+	a {
+		color:white;
+	&:hover {
+		color: #fff;	
+		text-decoration: none;
+		}
+	}
+	ul {
+		  padding:0 0 0 0;
+		  margin:0 0 0 0;
+	}
+	ul li {
+		  list-style:none;
+		  margin-bottom:25px;
+	}
+	ul li img {
+	 	 cursor: pointer;
+	}
 }
+
+/*certyfikaty-galery*/
+
+
+
+
+#certyfikatsWrapper {
+	margin:0px -15px 0px -15px;
+}
+
 
 /*bar-info*/
 .bar-info {
@@ -387,14 +424,20 @@ li {
 /*maps*/
 .maps-wrapper {
 	position: relative;
-	height: 300px;
+	height: 270px;
 	background-color: $color--default;
 	&_buttons {
 		color: white;
-		
+		h2 {
+			@include xs {
+				font-size: 21px;
+			} 
+		}
 		h4 {
 			line-height: 150%;
-
+			@include xs {
+				font-size: 15px;
+			} 
 		}
 		i {
 			padding-right: 10px;
@@ -402,17 +445,24 @@ li {
 		&-up {
 			background-color: $color__blue--light;
 			padding:20px 40px 30px 30px;
+		
 		@include lg {
 			float:left;
 			width: 50%;
+		@include xs {
+			padding:15px 20px 20px 15px;
+			} 
 		}
 		}
 		&-down{
 			background-color: $color--default;
 			padding:20px 40px 30px 30px;
-			@include lg {
+		@include lg {
 			float:left;
 			width: 50%;
+		@include xs {
+			padding:15px 20px 20px 15px;
+			} 
 		}
 		}
 	}
@@ -424,6 +474,10 @@ li {
  #mapkit-9103 {
         height:433px;
     }
+#map {
+    height:428px;
+    width: 100%;
+}
 
 .copyright {
 	text-align: center;
