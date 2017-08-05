@@ -3,8 +3,11 @@
   font-family: 'Dancing Script', cursive;
   font-weight: 400; }
 
+a {
+  text-decoration: none; }
+
 p {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Myriad', sans-serif; }
 
 h1 {
   font-family: 'Roboto', sans-serif; }
@@ -12,6 +15,9 @@ h1 {
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 600; }
+
+h3 {
+  font-family: 'Roboto', sans-serif; }
 
 h4 {
   font-size: 18px; }
@@ -31,6 +37,13 @@ li {
 .no-padding {
   padding-left: 0px;
   padding-right: 0px; }
+
+.single-title + hr {
+  border-color: #113c67;
+  width: 120px;
+  float: left;
+  margin-top: 10px;
+  padding-bottom: 5px; }
 
 /*buttons*/
 .button {
@@ -188,6 +201,51 @@ nav li {
 .carousel-control.right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.1) 100%); }
 
+.slide-banner img {
+  display: block;
+  margin: 0 auto; }
+
+/*coockies*/
+.cockies-wrapper {
+  background-color: #f5f5f5; }
+
+.cockies {
+  text-align: left;
+  padding: 14px 0px 1px 0px; }
+
+/*cennik*/
+.cennik-wrapper {
+  padding-bottom: 100px; }
+  .cennik-wrapper h3 {
+    padding: 30px 0px 20px 0px; }
+  .cennik-wrapper p {
+    padding-bottom: 20px; }
+  .cennik-wrapper .widget-title {
+    margin-left: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-top: 100px; }
+    .cennik-wrapper .widget-title:first-child {
+      margin-top: 20px; }
+
+table {
+  width: 100%; }
+  table tr:nth-of-type(2n) {
+    background: #eaf0f4; }
+  table th {
+    text-align: center;
+    font-size: 18px;
+    background: #00508b;
+    color: #fff;
+    padding: 10px;
+    font-weight: 700; }
+  table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 17px; }
+    table td:last-child {
+      text-align: right; }
+
 /*offers*/
 .offers {
   color: #fff;
@@ -203,6 +261,40 @@ nav li {
   .offers p {
     font-size: 16px; }
 
+/*oferta-offers*/
+.oferta-offers a {
+  text-decoration: none; }
+
+.oferta-offers .oferta-offers-box {
+  color: #fff;
+  text-align: center;
+  background-color: #b2b2b2;
+  padding: 15px 40px 12px 20px;
+  border-right: 1px solid #e5e5e5; }
+  @media (max-width: 991px) {
+    .oferta-offers .oferta-offers-box {
+      border-bottom: 1px solid #e5e5e5; } }
+  .oferta-offers .oferta-offers-box.no-active:hover {
+    background-color: #00afdb;
+    color: white; }
+  .oferta-offers .oferta-offers-box img {
+    height: 60px; }
+  .oferta-offers .oferta-offers-box p {
+    font-size: 16px;
+    font-weight: 300; }
+
+.oferta-offers .active {
+  background-color: #113c67; }
+
+.oferta-all-wrapper {
+  padding: 70px 0px 100px 0px; }
+  .oferta-all-wrapper .widget-title {
+    padding: 20px 0px 20px 40px;
+    background-color: #f5f5f5;
+    margin-top: 100px; }
+    .oferta-all-wrapper .widget-title:first-child {
+      margin-top: 0px; }
+
 /*about*/
 .about-wrapper {
   background-image: url("/img/offers-bg-left.jpg"), url("/img/offers-bg-right.jpg");
@@ -210,24 +302,81 @@ nav li {
   width: 100%;
   height: auto;
   display: block;
-  background-repeat: no-repeat; }
+  background-repeat: repeat-y; }
   @media (max-width: 991px) {
     .about-wrapper {
       background-image: none; } }
 
 .about__content {
-  padding: 29px 40px 0px 40px;
+  padding: 45px 40px 0px 15px;
   color: #7f7f7f; }
   .about__content h2 {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    font-size: 35px; }
     .about__content h2 span {
       font-size: 22px;
       font-weight: 400; }
   .about__content p {
     font-size: 18px;
     text-align: justify;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    line-height: 1.7; }
 
+/*ofert-content-wrapper*/
+.ofert-content-wrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 70px; }
+  @media (max-width: 991px) {
+    .ofert-content-wrapper {
+      background-image: none; } }
+  .ofert-content-wrapper__content {
+    padding: 29px 35px 0px 15px;
+    color: #7f7f7f; }
+    .ofert-content-wrapper__content h2 {
+      font-size: 35px;
+      padding-bottom: 15px; }
+    .ofert-content-wrapper__content h3 {
+      color: #00afdb; }
+    .ofert-content-wrapper__content p {
+      font-size: 16px;
+      text-align: justify;
+      padding-bottom: 30px;
+      font-weight: 300;
+      line-height: 1.7; }
+  .ofert-content-wrapper__menu {
+    text-align: left;
+    float: left;
+    padding-top: 29px; }
+    .ofert-content-wrapper__menu h3 {
+      padding-left: 40px;
+      padding-bottom: 28px;
+      color: #113c67; }
+    .ofert-content-wrapper__menu ul {
+      list-style-type: none; }
+    .ofert-content-wrapper__menu li {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 1px 0px; }
+      .ofert-content-wrapper__menu li a {
+        text-decoration: none;
+        padding: 12px 20px;
+        display: block;
+        color: #686868; }
+        .ofert-content-wrapper__menu li a h4 {
+          line-height: 1.3; }
+        .ofert-content-wrapper__menu li a:hover {
+          background-color: #00afdb;
+          color: white; }
+      .ofert-content-wrapper__menu li.active a {
+        background-color: #00afdb;
+        color: white; }
+
+.panel-body p {
+  padding: 20px 10px 10px 10px; }
+
+/*/ofert-content-wrapper*/
 .about__photo {
   text-align: right;
   padding-top: 40px; }
