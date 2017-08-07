@@ -448,7 +448,7 @@ table {
 /*maps*/
 .maps-wrapper {
   position: relative;
-  height: 270px;
+  height: 427px;
   background-color: #113c67;
   /*&_map {
 	padding: 0px;
@@ -485,6 +485,18 @@ table {
   @media (max-width: 1199px) and (max-width: 520px) {
     .maps-wrapper_buttons-down {
       padding: 15px 20px 20px 15px; } }
+
+.fa-facebook-official {
+  text-align: right;
+  float: right;
+  font-size: 45px;
+  position: relative;
+  right: 4px;
+  top: 10px;
+  color: white; }
+  @media (max-width: 520px) {
+    .fa-facebook-official {
+      right: -10px; } }
 
 #mapkit-9103 {
   height: 433px; }
