@@ -9,6 +9,45 @@
 	<script src="//code.jquery.com/jquery-latest.js"></script>
 	<title>Stokrotka</title>
 
+<script>
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
+}</script>
+
+<script>
+function DetectAndServe(){
+
+if (getMobileOperatingSystem() == "Android") {
+    window.location.href = "https://play.google.com/store"; 
+    }
+if (getMobileOperatingSystem() == "iOS") {
+    window.location.href = "https://itunes.apple.com/pl";
+    }
+if (getMobileOperatingSystem() == "Windows Phone") {
+    window.location.href = "http://www.stokrotka.pl/aplikacje/zwierzeta/";
+    }
+if (getMobileOperatingSystem() == "unknown") {
+  window.location.href = "http://www.stokrotka.pl/aplikacje/zwierzeta/";}
+};
+</script>
+
 </head>
 <body>
 	<div class="container-fluid no-padding">
@@ -51,45 +90,6 @@
 			</div>
 		</div>
 	</div>	
-
-
-<script>
-function getMobileOperatingSystem() {
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-      // Windows Phone must come first because its UA also contains "Android"
-    if (/windows phone/i.test(userAgent)) {
-        return "Windows Phone";
-    }
-
-    if (/android/i.test(userAgent)) {
-        return "Android";
-    }
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        return "iOS";
-    }
-
-    return "unknown";
-}</script>
-
-<script>
-function DetectAndServe(){
-
-if (getMobileOperatingSystem() == "Android") {
-    window.location.href = "https://play.google.com/store"; 
-    }
-if (getMobileOperatingSystem() == "iOS") {
-    window.location.href = "https://itunes.apple.com/pl";
-    }
-if (getMobileOperatingSystem() == "Windows Phone") {
-    window.location.href = "http://www.stokrotka.pl/aplikacje/zwierzeta/";
-    }
-if (getMobileOperatingSystem() == "unknown") {
-  window.location.href = "http://www.stokrotka.pl/aplikacje/zwierzeta/";}
-};
-</script>
 
 
 </body>
