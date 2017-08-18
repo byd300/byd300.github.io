@@ -9,44 +9,37 @@
 	<script src="//code.jquery.com/jquery-latest.js"></script>
 	<title>Stokrotka</title>
 
-<script>
-function getMobileOperatingSystem() {
-  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-      // Windows Phone must come first because its UA also contains "Android"
-    if (/windows phone/i.test(userAgent)) {
-
-        return "Windows Phone";
-    }
-
-    if (/android/i.test(userAgent)) {
-        return "Android";
-    }
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        return "iOS";
-    }
-
-}</script>
-
-<script>
-function DetectAndServe(){
-
-if (getMobileOperatingSystem() == "Android") {
-    window.location.href = "https://play.google.com/store"; 
-    }
-if (getMobileOperatingSystem() == "iOS") {
-    window.location.href = "http://itunes.apple.com/pl";
-    }
-if (getMobileOperatingSystem() == "Windows Phone") {
-    window.location.href = "http://www.stokrotka.pl/aplikacje/zwierzeta/";
-    }
-};
-</script>
 
 </head>
-<body onload="DetectAndServe()" async="true"> 
+<body > 
+	<script type="text/javascript">
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    }
+};
+var deviceWinMob = "windows ce";
+var deviceWinPhone = "windows phone";
+var uagent = navigator.userAgent.toLowerCase();
+
+if ( isMobile.Android() ) {
+        document.location.href = "https://play.google.com/store/apps/details?id=pl.fream.zdrowy.apetyt";
+    }
+else if(isMobile.iOS())
+    {
+    document.location.href="http://itunes.apple.com/pl/app/zdrowy-apetyt/id541075335";
+    }
+else if (uagent.search(deviceWinPhone) > -1)
+    {
+    document.location.href="http://www.windowsphone.com/en-us/store/app/zdrowy-apetyt/15f040e5-ea77-4c11-af2b-ed1c5b88598d";
+    }
+
+
+</script>
 	<div class="container-fluid no-padding ">
 		<div class="bg">
 			
