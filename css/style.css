@@ -13,7 +13,7 @@ h3 {
 	width: 100%;
     height: auto;
     display: block;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     height: 100%;
     position: absolute;
 }
