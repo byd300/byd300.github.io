@@ -17,6 +17,207 @@
 .text-center {
   text-align: center; }
 
+/* 
+Oferta menu
+*/
+/* Submenu */
+.oferta__menu-wrapper {
+  background-color: #00aedb; }
+
+.oferta__menu a {
+  background-color: #00aedb;
+  text-decoration: none; }
+
+.oferta__menu a:hover {
+  text-decoration: none;
+  background-color: #0a8fb1; }
+
+.oferta__menu__box {
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  padding-bottom: 15px;
+  font-family: FontAwesome;
+  content: "\f087"; }
+
+.oferta__menu__box h2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.9rem;
+  text-align: left; }
+
+@media (max-width: 991px) {
+  .oferta__menu__box h2 {
+    text-align: none;
+    font-size: 1.9rem; } }
+
+@media (max-width: 1199px) {
+  .oferta__menu__box h2 {
+    text-align: center; } }
+
+@media (max-width: 991px) {
+  .oferta__menu__box {
+    padding-right: 5px; } }
+
+@media (max-width: 767px) {
+  .oferta__menu__box {
+    padding-bottom: 30px;
+    text-align: center; } }
+
+.content {
+  background-color: white; }
+
+@media (max-width: 991px) {
+  .content {
+    padding-left: 0px; } }
+
+.content ul {
+  list-style-position: outside; }
+
+.content ul li {
+  list-style: none;
+  background: url(../images/bullet.png) 0 0 no-repeat;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.8; }
+
+.content ul li span {
+  font-weight: 600; }
+
+.content ul li a {
+  color: #555;
+  text-decoration: none; }
+
+.content ul li a:hover {
+  -webkit-transition: color .3s, border .3s, color .3s;
+  transition: color .3s, border .3s, color .3s;
+  color: #b50864; }
+
+.content__first img {
+  width: 270px;
+  padding-right: 25px; }
+
+@media (max-width: 991px) {
+  .content__first img {
+    display: none; } }
+
+.content__first .arrow-box {
+  position: absolute;
+  top: -47px;
+  left: 140px; }
+
+@media (max-width: 1199px) {
+  .content__first .arrow-box {
+    left: 120px; } }
+
+.content__first .arrow-box img {
+  width: 100%; }
+
+.content__secound hr {
+  width: 95%;
+  padding-right: 20px; }
+
+.content__secound ul {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.content__secound--ico1 {
+  margin: 30px 0px;
+  border-right: 1px #dbdbdb solid; }
+
+.content__secound--ico2 {
+  margin: 30px 0px;
+  border-right: 1px #dbdbdb solid; }
+
+.content__secound .arrow-box {
+  position: absolute;
+  top: -47px;
+  left: 535px; }
+
+@media (max-width: 1199px) {
+  .content__secound .arrow-box {
+    left: 435px; } }
+
+.content__secound .arrow-box img {
+  width: 100%; }
+
+@media (max-width: 991px) {
+  .content__secound .arrow-box {
+    display: none; } }
+
+.content__secound--gaz ul li {
+  background: url(../images/bullet-blue.png) 0 0 no-repeat; }
+
+.content__third hr {
+  width: 95%;
+  padding-right: 20px; }
+
+.content__third ul {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.content__third--ico1 {
+  margin: 30px 0px;
+  border-right: 1px #dbdbdb solid; }
+
+.content__third--ico2 {
+  margin: 30px 0px;
+  border-right: 1px #dbdbdb solid; }
+
+.content__third--gaz ul li {
+  background: url(../images/bullet-blue.png) 0 0 no-repeat; }
+
+.content__third .arrow-box {
+  position: absolute;
+  top: -47px;
+  left: 910px; }
+
+@media (max-width: 1199px) {
+  .content__third .arrow-box {
+    left: 764px; } }
+
+.content__third .arrow-box img {
+  width: 100%; }
+
+@media (max-width: 991px) {
+  .content__third .arrow-box {
+    display: none; } }
+
+.menu-vertical {
+  padding: 0px;
+  list-style: none;
+  text-align: left;
+  background: #F2F2F2; }
+
+.mv-item,
+.mv-item a {
+  display: block; }
+
+.mv-item a {
+  margin: 1px 0;
+  padding: 10px 17px;
+  color: #666;
+  background: #fff;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.mv-item a:hover,
+.mv-item a:focus {
+  background: #F2F2F2;
+  color: #666 !important;
+  padding-left: 30px; }
+
+body {
+  font-family: "Open Sans", "Segoe UI", Helvetica, Arial;
+  font-weight: lighter;
+  text-align: center; }
+
+h1 {
+  color: #444;
+  margin: 2em 0;
+  font-weight: lighter; }
+
 header .contact {
   font-weight: 300;
   font-size: 0.9rem; }
@@ -38,6 +239,9 @@ header .contact .fa-facebook-f a:hover, header .contact .fa-map-marker-alt a:hov
 @media (max-width: 767px) {
   header .contact #fb-none {
     display: none; } }
+
+.title {
+  text-align: left; }
 
 .title h3 {
   font-size: 2rem; }
@@ -65,6 +269,9 @@ header .contact .fa-facebook-f a:hover, header .contact .fa-map-marker-alt a:hov
 h1, h2, h3, h4, h5, h6, p, span {
   color: #58585a; }
 
+h6 {
+  line-height: 1.6rem; }
+
 .btn {
   border-radius: 0;
   cursor: pointer; }
@@ -82,9 +289,13 @@ h1, h2, h3, h4, h5, h6, p, span {
   padding-left: 0; }
 
 .rwd {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto; }
+
+.sub__header .header__bg {
+  max-height: 400px;
+  position: relative; }
 
 .navbar .navbar-collapse ul li {
   padding-left: 50px !important; }
@@ -130,7 +341,8 @@ h1, h2, h3, h4, h5, h6, p, span {
     padding-right: 150px; } }
 
 .bg-faded {
-  background-color: transparent; }
+  background-color: transparent;
+  text-align: left; }
 
 .bg-faded .navbar-toggler-right {
   margin-top: 15px; }
@@ -303,7 +515,8 @@ h1, h2, h3, h4, h5, h6, p, span {
   text-decoration: none;
   padding-bottom: 80px;
   font-family: FontAwesome;
-  content: "\f087"; }
+  content: "\f087";
+  text-align: left; }
 
 .submenu__box .btn {
   position: absolute;
@@ -633,3 +846,42 @@ h1, h2, h3, h4, h5, h6, p, span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+/* Cennik */
+.cennik {
+  z-index: 2;
+  padding: 50px 0px 130px 0px; }
+
+.cennik p {
+  padding-bottom: 15px; }
+
+table {
+  width: 100%; }
+
+table tr:nth-of-type(2n) {
+  background: #eaf0f4; }
+
+table th {
+  font-size: 18px;
+  background: #00508b;
+  color: #fff;
+  padding: 10px;
+  font-weight: 400; }
+
+table td {
+  padding: 10px;
+  text-align: left;
+  font-size: 14px; }
+
+table td:last-child {
+  text-align: right; }
+
+.kontakt p {
+  font-size: 1.2rem; }
+
+.kontakt span {
+  font-size: 1.1rem;
+  margin-left: 15px; }
+
+.kontakt-info {
+  padding-bottom: 20px; }

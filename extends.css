@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:100,100i,300,400,500,700|Dancing+Script:400,700");
+.roboto {
+  font-family: 'Roboto', sans-serif; }
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif; }
+
+.dancing-script {
+  font-family: 'Dancing Script', cursive; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
